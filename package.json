@@ -3,7 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun src/index.ts",
+    "dev": "bun run src/index.ts --watch",
+    "introspect": "drizzle-kit introspect",
+    "generate": "drizzle-kit generate",
     "migrate": "bun run src/scripts/migrate.ts"
   },
   "devDependencies": {
